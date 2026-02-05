@@ -11,16 +11,22 @@ int main()
 
     int arr[n];
 
-    cout << "Enter " << n << " number of array:\n";
+    // Input loop
+    cout << "Enter " << n << " number of array:";
     for(int i = 0; i < n; i++)
     {
         cin >> arr[i];
+    }
+
+    for(int i = 0; i < n; i++)
+    {
         sum += arr[i];
     }
 
     avg = (float)sum / n;
 
-    cout << "Array elements are:\n";
+
+    cout << "Array elements are:";
     for(int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
@@ -31,4 +37,3 @@ int main()
 
     return 0;
 }
-
